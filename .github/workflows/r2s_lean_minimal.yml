@@ -6,15 +6,13 @@ on:
       - master
     paths:
       - '.github/workflows/r2s_lean_minimal.yml'
-  schedule:
-    - cron: '10 08 * * *'
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
-    if: github.repository == 'klever1988/nanopi-openwrt'
+    if: github.repository == 'zxky-sys/nanopi-openwrt'
 
     steps:
 
