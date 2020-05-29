@@ -1,7 +1,11 @@
 name: test release
+
 on:
-  watch:
-    types: [started]
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/test_release.yml'
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
